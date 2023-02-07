@@ -1,10 +1,13 @@
 from stockfish import Stockfish
 import chess
+import os
 
 
 
 def ini_engine():
-    engine = Stockfish(path="C:/Users/gonzalo/Desktop/proyect/chess/engine/stockfish_15.1_win_x64_avx2/stockfish-windows-2022-x86-64-avx2"
+    path = os.path.join(os.path.join(os.path.dirname(os.path.realpath(__file__)),'eng'),'stockfish-windows-2022-x86-64-avx2')
+
+    engine = Stockfish(path=path
                             ,parameters={
                                 # "UCI_Elo": 2000
                                     "Hash": 4096
