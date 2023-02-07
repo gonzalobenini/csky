@@ -25,6 +25,5 @@ statsmodels==0.13.2
 stockfish==3.28.0
 tables==3.6.1
 tabulate==0.8.9
-TBB==0.2
 tzdata==2022.4
 zict==2.0.0
